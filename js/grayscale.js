@@ -31,9 +31,11 @@
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
       document.getElementById('logo').src = 'img/logo-black.png';
+      console.log("black image");
     } else {
       $("#mainNav").removeClass("navbar-shrink");
       document.getElementById('logo').src = 'img/logo-white.png';
+      console.log("white image");
     }
   };
   // Collapse now if page is not at top
