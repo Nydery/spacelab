@@ -164,12 +164,28 @@
           <div class="card py-4 h-100">
             <div class="card-body text-center">
               <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Address</h4>
+              <h4 class="text-uppercase m-0">Addresse</h4>
               <hr class="my-4">
-              <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+              <div class="small text-black-50">HTBLA Leonding, Limesstraße 12-14</div>
             </div>
           </div>
         </div>
+
+        <script type="text/javascript">
+          function copyMail() {
+            /* Get the text field */
+            var copyText = document.getElementById("mailText");
+
+            /* Select the text field */
+            copyText.select();
+
+            /* Copy the text inside the text field */
+            document.execCommand("copy");
+
+            /* Alert the copied text */
+            alert("Die E-Mail Adresse wurde in die Zwischenablage kopiert!");
+          }
+        </script>
 
         <div class="col-md-4 mb-3 mb-md-0">
           <div class="card py-4 h-100">
@@ -178,12 +194,12 @@
               <h4 class="text-uppercase m-0">Email</h4>
               <hr class="my-4">
               <div class="small text-black-50">
-                <a href="#">hello@yourdomain.com</a>
+                <a onclick="copyMail()" id="mailText">business@space-lab.at</a>
               </div>
             </div>
           </div>
         </div>
-
+        <!--
         <div class="col-md-4 mb-3 mb-md-0">
           <div class="card py-4 h-100">
             <div class="card-body text-center">
@@ -195,6 +211,7 @@
           </div>
         </div>
       </div>
+    -->
 
       <div class="social d-flex justify-content-center">
         <a href="#" class="mx-2">
@@ -214,7 +231,7 @@
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
-      Copyright &copy; SpaceLab 2019
+      Copyright &copy; SpaceLAB 2019
     </div>
   </footer>
 
