@@ -170,23 +170,6 @@
             </div>
           </div>
         </div>
-
-        <script type="text/javascript">
-          function copyMail() {
-            /* Get the text field */
-            var copyText = document.getElementById("mailText");
-
-            /* Select the text field */
-            copyText.select();
-
-            /* Copy the text inside the text field */
-            document.execCommand("copy");
-
-            /* Alert the copied text */
-            alert("Die E-Mail Adresse wurde in die Zwischenablage kopiert!");
-          }
-        </script>
-
         <div class="col-md-4 mb-3 mb-md-0">
           <div class="card py-4 h-100">
             <div class="card-body text-center">
@@ -194,7 +177,17 @@
               <h4 class="text-uppercase m-0">Email</h4>
               <hr class="my-4">
               <div class="small text-black-50">
-                <a id="mailText">business@space-lab.at</a>
+                <input type="text" value="Hello World" id="myInput">
+                <button onclick="myFunction()">Copy text</button>
+                <script>
+                          function myFunction() {
+                            var copyText = document.getElementById("myInput");
+                            copyText.select();
+                            copyText.setSelectionRange(0, 99999)
+                            document.execCommand("copy");
+                            alert("Text kopiert: " + copyText.value);
+                          }
+                 </script>
                 <br>
                 <br>
                 <a href="#" class="btn btn-primary js-scroll-trigger">Kopieren</a>
