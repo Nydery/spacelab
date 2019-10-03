@@ -18,6 +18,6 @@ $email_body = "Eine neue Nachricht vom Webformular ist angekommen. \n\nName/Firm
 $to = $email_from;
 $headers = "From: $email_from";
 
-mail($to, $email_subject, $email_body, $headers)
+mail($to, $email_subject, $email_body, $headers);
 
  ?>
