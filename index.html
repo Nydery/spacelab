@@ -174,43 +174,21 @@
           <i class="far fa-question-circle fa-2x mb-2 text-white"></i>
           <h2 class="text-white mb-3">Sie haben Fragen oder Anregungen an uns?</h2>
           <h5 class="text-white mb-5">Dann schreiben Sie uns!</h5>
-          <!--
-          <form class="form-inline d-flex">
-            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+
+
+          <form class="" action="https://space-lab.at/sendMailFromForm.php" method="post">
+            <label class="text-white" for="name">Name / Firma</label><br>
+            <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"  id="nameArea" type="name" name="name" placeholder="Ihr Name od. Firmenname"><br>
+
+            <label class="text-white" for="name">E-Mail Adresse</label><br>
+            <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="emailArea" type="email" name="email" placeholder="Ihre E-Mail Adresse">
+            <label class="text-white" for="form-text text-muted">Damit wir uns bei Ihnen melden können.</label><br><br>
+
+            <label class="text-white" for="name">Nachricht</label><br>
+            <textarea class="form-control" id="messageArea" rows="3" name="message" placeholder="Ihre Nachricht"></textarea>
+            <br><br>
+            <button type="submit" class="btn btn-primary">Absenden</button>
           </form>
-
-
-
-
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-          </div>
-          <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
--->
-        <form class="" action="https://space-lab.at/sendMailFromForm.php" method="post">
-          <label class="text-white" for="name">Name / Firma</label><br>
-          <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"  id="nameArea" type="name" name="name" placeholder="Ihr Name od. Firmenname"><br>
-
-          <label class="text-white" for="name">E-Mail Adresse</label><br>
-          <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="emailArea" type="email" name="email" placeholder="Ihre E-Mail Adresse">
-          <label class="text-white" for="form-text text-muted">Damit wir uns bei Ihnen melden können.</label><br><br>
-
-          <label class="text-white" for="name">Nachricht</label><br>
-          <textarea class="form-control" id="messageArea" rows="3" name="message" placeholder="Ihre Nachricht"></textarea>
-          <br><br>
-          <button type="submit" class="btn btn-primary">Absenden</button>
-        </form>
         </div>
       </div>
     </div>
