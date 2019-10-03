@@ -177,26 +177,37 @@
               <h4 class="text-uppercase m-0">Email</h4>
               <hr class="my-4">
               <div class="small text-black-50">
-                  <p id="text">business@space-lab.at</p>
-                  <button onclick="CopyToClipboard()">Kopieren</button>
-                  <script>
-                  function CopyToClipboard() {
-                    // Get the desired text to copy
-                    var selectText = document.getElementById('text').innerHTML;
-                    // Create an input
-                    var input = document.createElement('input');
-                    // Set it's value to the text to copy, the input type doesn't matter
-                    input.value = selectText;
-                    // add it to the document
-                    document.body.appendChild(input);
-                    // call select(); on input which performs a user like selection  
-                    input.select();
-                    // execute the copy command, this is why we add the input to the document
-                    document.execCommand("copy");
-                    // remove the input from the document
-                    document.body.removeChild(input);
-                  }
-                  </script>
+                  <style>
+                      .btn {
+                        border: none;
+                        background-color: inherit;
+                        padding: 14px 28px;
+                        font-size: 16px;
+                        cursor: pointer;
+                        display: inline-block;
+                      }
+                      </style>
+
+                      <button class="btn success"  onclick="CopyToClipboard()" id="text">business@space-lab.at</button>
+
+                      <script>
+                      function CopyToClipboard() {
+                        // Get the desired text to copy
+                        var selectText = document.getElementById('text').innerHTML;
+                        // Create an input
+                        var input = document.createElement('input');
+                        // Set it's value to the text to copy, the input type doesn't matter
+                        input.value = selectText;
+                        // add it to the document
+                        document.body.appendChild(input);
+                        // call select(); on input which performs a user like selection  
+                        input.select();
+                        // execute the copy command, this is why we add the input to the document
+                        document.execCommand("copy");
+                        // remove the input from the document
+                        document.body.removeChild(input);
+                      }
+                      </script>
                 <br>
                 <br>
               </div>
