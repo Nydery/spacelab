@@ -1,0 +1,13 @@
+.moreinfo {
+  font-style:oblique 30deg;
+}
+
+.btnclip {
+  border: none;
+  background-color: inherit;
+  padding: 4px 8px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+.success {color: grey;}

@@ -31,31 +31,11 @@
   <!-- Custom styles for this template -->
   <link href="css/grayscale.min.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="css/master.css">
+
 </head>
 
-<style>
-  .form-nydery{
-    width: 70%;
-    height: calc(1.5em + .75rem + 2px);
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  }
-</style>
-
 <body id="page-top">
-  <style media="screen">
-    .moreinfo {
-      font-style:oblique 30deg;
-    }
-  </style>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
@@ -71,6 +51,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#projects">Über uns</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#sponsors">Unnsere Sponsoren</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
@@ -186,7 +169,7 @@
       <br>
       <br>
       <br>
-      <center><h1 style="color:black;font-size:50px;"><u>Unsere Sponsoren</u></h1><img src="img/unseresponsoren.png" alt="Unsere Sponsoren" style="height: 100%; width: 100%; object-fit: contain"></center>
+      <center><h1 style="color:black;font-size:50px;" id="sponsors"><u>Unsere Sponsoren</u></h1><img src="img/unseresponsoren.png" alt="Unsere Sponsoren" style="height: 100%; width: 100%; object-fit: contain"></center>
       <br>
     </div>
   </section>
@@ -234,17 +217,6 @@
               <h4 class="text-uppercase m-0">Email</h4>
               <hr class="my-4">
               <div class="small text-black-50">
-                  <style>
-                      .btnclip {
-                        border: none;
-                        background-color: inherit;
-                        padding: 4px 8px;
-                        font-size: 16px;
-                        cursor: pointer;
-                        display: inline-block;
-                      }
-                      .success {color: grey;}
-                      </style>
                       <button class="btnclip success"  onclick="CopyToClipboard()" id="text">business@space-lab.at</button>
                       <script>
                       function CopyToClipboard() {
