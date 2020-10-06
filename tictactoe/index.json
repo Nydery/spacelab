@@ -1,5 +1,6 @@
 {
   {
+    "start-session",
     "connect-code": "AAAA",
     "r1c1": "X",
     "r1c2": "X",
@@ -10,6 +11,7 @@
     "r3c1": "X",
     "r3c2": "X",
     "r3c3": "X",
+    "end-session",
   }
 }
 
