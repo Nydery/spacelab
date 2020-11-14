@@ -51,8 +51,8 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  -webkit-transform-origin: 50% 100%;
-          transform-origin: 50% 100%;
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
 }
 .demo__card.reset {
   -webkit-transition: -webkit-transform 0.3s;
