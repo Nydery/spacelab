@@ -15,8 +15,8 @@ body {
 
 .demo {
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 100%;
+  top: 100%;
   width: 30.6rem;
   height: 54rem;
   margin-left: -15.3rem;
