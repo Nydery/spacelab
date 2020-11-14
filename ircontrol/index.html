@@ -4,30 +4,56 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <center><h1>Test</h1></center>
+<body>
+
 <style>
 .button {
   background-color: #4CAF50; /* Green */
-  border: none;
+  border: 10px;
   color: white;
-  padding: 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 0px 0px;
   cursor: pointer;
+  height: 70px; 
+  width: 70px; 
+  border-radius: 70px;
 }
 
-.button1 {border-radius: 30px;}
+p {
+    display: inline;
+}
+
+.button2{font-size:14px;}
 
 </style>
-</head>
-<body>
 
-<button class="button button1"></button>
-<button class="button button1"></button>
-<button class="button button1"></button>
-<button class="button button1"></button>
+<div class="w3-container">
+  <h2>Card Example</h2>
+
+  <div class="w3-card-4 w3-dark-grey" style="width:50%">
+
+    <div class="w3-container w3-center">
+      <h3>Remote 1</h3>
+
+      <div class="w3-section">
+        <button class="button button1">ON</button>
+        <p>POWER</p>
+        <button class="button button1">OFF</button>
+        <br><br><br>
+        <button class="button button1">4H</button>
+        <p>TIMER</p>
+        <button class="button button1">8H</button>
+        <br><br><br>
+        <button class="button button2">FLICK</button>
+        <p>MODE</p>
+        <button class="button button2">STEADY</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 </body>
 </html>
